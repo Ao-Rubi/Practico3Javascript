@@ -1,13 +1,16 @@
 let frase = prompt("Escriba una frase");
 
 function checkType(centence) {
-    centence = String(centence).trim();
+    centence = String(centence).trim(); // String hace manipulable la "centence" y luego trim quita los espacios en blanco
+
+    //Valida si los caracteres estan en mayusculas, minusculas o los 2
     const regxs = {
         "lower": /^[a-z0-9 ]+$/,
         "upper": /^[A-Z0-9 ]+$/,
         "upperLower": /^[A-Za-z0-9 ]+$/
     }
 
+    //Test comprueba si el elemento puesto como parametro cumple con las condiciones puestas por la validacion
     if (regxs.lower.test(centence)) return '0';
     if (regxs.upper.test(centence)) return '1';
     if (regxs.upperLower.test(centence)) return '2';
