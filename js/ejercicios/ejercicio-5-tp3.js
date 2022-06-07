@@ -13,7 +13,7 @@ function checkType(centence) {
     // ^[] comprueba que la cadena coincida con los parametros dentro de corchetes.
     //[]+ comprueba que la cadena coincida con al menos uno de los parametros dentro de corchetes.
 
-    //Test comprueba si el elemento puesto como parametro cumple con las condiciones puestas por la validacion
+    //Test comprueba si el elemento puesto como parametro ".test(parametro)" cumple con las condiciones puestas por la validacion
     if (regxs.lower.test(centence)) return '0';
     if (regxs.upper.test(centence)) return '1';
     if (regxs.upperLower.test(centence)) return '2';
